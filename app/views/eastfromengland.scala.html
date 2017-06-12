@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Northwest Passage</title>
+    <link rel="stylesheet" href="assets/stylesheets/main.css">
+</head>
+<body>
+<h1>Too Much Land</h1>
+<p>This way is not looking very promising.
+    You keep going in and out of bays trying to find a way east but you always run into land.
+   You are afraid you may run aground and be eaten by an auroch.
+</p>
+<form action="@routes.GameController.homePort" method="post">
+    <input type="submit" value="Sail back West"/>
+</form>
+<form action="@routes.GameController.eastEnd" method="post">
+    <input type="submit" value="Keep trying to sail East"/>
+</form>
+</body>
+</html>
