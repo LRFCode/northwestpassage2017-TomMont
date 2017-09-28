@@ -4,11 +4,11 @@ import play.mvc.Controller;
 import play.mvc.Result;
 
 //BRONZE
-//TODO Add a Play Again button to the pages that end the game. It should go to the start page.
-//TODO Add a New Player button to the pages that end the game. It should go to the welcome page.
-//TODO Add an additional step in the northern route in between England and the current end page
-//TODO   In this middle step allow the player to continue north or return south
-//TODO   Make up your own description for this page. G rated please.
+//TODONE Add a Play Again button to the pages that end the game. It should go to the start page.
+//TODONE Add a New Player button to the pages that end the game. It should go to the welcome page.
+//TODONE Add an additional step in the northern route in between England and the current end page
+//TODONE   In this middle step allow the player to continue north or return south
+//TODONE   Make up your own description for this page. G rated please.
 
 //SILVER
 //TODO Add a text box to the welcome page for the player to enter their name
@@ -82,5 +82,10 @@ public class GameController extends Controller
     public Result kittens()
     {
         return ok(views.html.kittens.render());
+    }
+
+    public Result earlyNorth()
+    {
+        return ok(views.html.earlynorth.render());
     }
 }

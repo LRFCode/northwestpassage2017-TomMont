@@ -15,5 +15,13 @@
    Years later you are rescued by a ship named Titanic on its way to the New World.
    The end.
 </p>
+<br/>
+<form action="@routes.GameController.start" method="post">
+    <input type="submit" value="Try Again!"/>
+</form>
+<br/>
+<form action="@routes.GameController.welcome" method="get">
+    <input type="submit" value="New Player? Click Here!"/>
+</form>
 </body>
 </html>

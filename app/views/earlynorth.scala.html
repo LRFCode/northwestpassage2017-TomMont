@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Northwest Passage</title>
+    <link rel="stylesheet" href="assets/stylesheets/main.css">
+</head>
+<body>
+<h1>Too Much Ice</h1>
+<p>You and you're shipmates are heading north.  Your crew has spotted ice further north and
+    the cold wind forewarns bad news.  What do you wish to do?
+
+</p>
+<br/>
+<form action="@routes.GameController.goNorthFromEngland" method="post">
+    <input type="submit" value="Continue North"/>
+</form>
+<form action="@routes.GameController.homePort" method="post">
+    <input type="submit" value="Return South"/>
+</form>
+</body>
+</html>
