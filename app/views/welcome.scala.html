@@ -11,8 +11,11 @@
 <p>
 This game is meant to be played by only the most skilled gamers.  Play at your own risk!
 </p>
-<form action="@routes.GameController.start" method="post">
-    <input type="submit" value="Let's Do This!"/>
+<form method="POST" action="@routes.GameController.start">
+    <label>Please enter your name: </label>
+    <input type="text" name="name"/><br/>
+    <button type="submit">Let's Do This!</button>
+    <br/>
 </form>
 <form action="@routes.GameController.kittens" method="get">
     <input type="submit" value="Kittens"/>
